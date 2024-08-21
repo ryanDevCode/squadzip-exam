@@ -39,9 +39,11 @@ h1 {
     text-align: center;
     margin: 2em auto;
 }
-ul li{
+
+ul li {
     list-style: none;
 }
+
 /* styles for heading */
 .heading {
     background-color: var(--background-color);
@@ -76,25 +78,29 @@ form select {
 .heading label {
     text-align: left;
 }
+
 /* styles for filter section     */
 
 .filter-section {
     padding: 2em;
     text-align: left;
 }
-.filter-section button{
+
+.filter-section button {
     background-color: var(filter-section);
 }
+
 .filter-header {
     display: flex;
     justify-content: space-between;
     margin-bottom: .5em;
 }
 
-.filter-header button{
-   cursor: pointer;
+.filter-header button {
+    cursor: pointer;
 
 }
+
 .filter-option {
     background-color: var(--tags-color);
     color: var(--text-color);
@@ -102,7 +108,7 @@ form select {
     padding: .5em;
     font-size: small;
     cursor: pointer;
-    
+
 }
 
 .filter-option.selected {
@@ -111,26 +117,28 @@ form select {
     border-radius: 7px;
 }
 
-.filter{
+.filter {
     display: flex;
     gap: .5em;
 }
-.type{
+
+.type {
     text-align: center;
     margin-top: .5em;
-    justify-content: center
-    ;
+    justify-content: center;
 }
+
 /* styles for forms */
 form {
     display: flex;
 }
 
-.EditCard{
+.EditCard {
     display: flex;
     flex-direction: column;
     gap: .5em;
 }
+
 .EditCard input,
 textarea {
     padding: 1rem;
@@ -140,41 +148,49 @@ textarea {
     min-height: 2rem;
 
 }
-.EditTags{
+
+.EditTags {
     margin: 1em;
 }
+
 .EditTags span {
     cursor: pointer;
     margin: 1em .5em;
-  }
-  
-  .tag-selected {
+}
+
+.tag-selected {
     background-color: var(--text-color);
     color: var(--btn-text-color);
     padding: .3em;
     border-radius: 7px;
-  }
-  
-  .tag-unselected {
+}
+
+.tag-unselected {
     background-color: var(--tags-color);
     color: var(--text-color);
     padding: .3em;
     border-radius: 7px;
-  }
-  
+}
+
+.tags-container {
+    margin-top: 1em;
+}
+
 /* styles for cards */
 .card-container {
     display: flex;
     flex-direction: column;
     gap: 1em;
 }
-.CardHeader{
+
+.CardHeader {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 1em;
 }
-.SubHeader{
+
+.SubHeader {
     display: flex;
     gap: 1em;
     color: var(--light-text-color);
@@ -182,23 +198,25 @@ textarea {
     flex-wrap: wrap;
 }
 
-.CardButtons{
+.CardButtons {
     display: flex;
     gap: .5em;
 }
-.CardFooter{
+
+.CardFooter {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin:1em 0;
+    margin: 1em 0;
     gap: 1em;
 }
 
-.CardFooter form{
+.CardFooter form {
     display: flex;
     gap: .5em;
     flex-wrap: wrap;
 }
+
 .PostCard {
     padding: 2em;
     text-align: left;
@@ -207,75 +225,92 @@ textarea {
     margin: 0 2em;
 }
 
-.PostCard input{
+.PostCard input {
     padding: 0 1em;
 }
-.card-container button{
-background-color: var(--btn-color);
-  color: var(--btn-text-color);
-  padding: 10px 20px;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  transition: 0.3s;
+
+.card-container button {
+    background-color: var(--btn-color);
+    color: var(--btn-text-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 /* end styles for cards */
 
 
-@media (width <= 800px) {
+@media (width <=800px) {
     .App {
         margin: 1em 0;
 
     }
-    .CardHeader{
+
+    .CardHeader {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         margin-bottom: 1em;
     }
+
     .filter-header {
         margin-bottom: 1em;
     }
-    .filter-header h1{
-        font-size: large
-        
-        ;
+
+    .filter-header h1 {
+        font-size: large;
     }
-    .filter-header button{
-       font-size: small;
+
+    .filter-header button {
+        font-size: small;
     }
+
     .filter-option {
         padding: .5em;
         font-size: x-small;
-        
+
     }
-    .CardButtons{
+
+    .EditTags span {
+        font-size: small;
+        margin: 0;
+    }
+
+    .tags-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5em;
+    }
+
+    .CardButtons {
         display: flex;
         gap: .1em;
     }
-    .CardButtons button{
-     padding: .3em;
-     gap: .2em;
+
+    .CardButtons button {
+        padding: .3em;
+        gap: .2em;
     }
-    .CardFooter{
+
+    .CardFooter {
         display: flex;
-        flex-direction: column
-        ;
+        flex-direction: column;
         gap: 1em;
     }
-    
-    .CardFooter form{
+
+    .CardFooter form {
         display: flex;
         flex-direction: column;
         gap: .2em;
         flex-wrap: wrap;
     }
 
-  .CardFooter form input{
-    height: 2em;
-   
+    .CardFooter form input {
+        height: 2em;
+
     }
-  
-  
-  }
+
+
+}

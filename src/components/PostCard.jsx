@@ -103,6 +103,7 @@ const PostCard = ({
           />
           <div className="EditTags">
             <label>Edit Tags: </label>
+            <div className="tags-container">
             {availableTags.map((tag, index) => (
               <span
                 key={index}
@@ -114,6 +115,9 @@ const PostCard = ({
                 {tag}
               </span>
             ))}
+
+            </div>
+           
           </div>
 
           <button onClick={handleUpdate}>Update Post</button>
