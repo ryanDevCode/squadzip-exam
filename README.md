@@ -12,13 +12,16 @@ First, open a terminal or command prompt and navigate to the directory where you
 ```
 git clone https://github.com/ryanDevCode/squadzip-exam.git
 ```
-### 2. Install Dependencies
-Navigate to the project directory:
+### 2. Navigate to the project directory:
+```
+cd squadzip-exam
+```
+### 3. Install Dependencies
 Next, install the project dependencies using npm:
 ```
 npm install
 ```
-### 3. Start the Development Server
+### 4. Start the Development Server
 Finally, start the development server by running the following command:
 ```
 npm run dev
