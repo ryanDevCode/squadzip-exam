@@ -171,12 +171,15 @@ textarea {
 .CardHeader{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
 }
 .SubHeader{
     display: flex;
     gap: 1em;
     color: var(--light-text-color);
     margin-bottom: 1em;
+    flex-wrap: wrap;
 }
 
 .CardButtons{
@@ -188,11 +191,13 @@ textarea {
     flex-wrap: wrap;
     justify-content: space-between;
     margin:1em 0;
+    gap: 1em;
 }
 
 .CardFooter form{
     display: flex;
     gap: .5em;
+    flex-wrap: wrap;
 }
 .PostCard {
     padding: 2em;
@@ -216,3 +221,61 @@ background-color: var(--btn-color);
 }
 
 /* end styles for cards */
+
+
+@media (width <= 800px) {
+    .App {
+        margin: 1em 0;
+
+    }
+    .CardHeader{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 1em;
+    }
+    .filter-header {
+        margin-bottom: 1em;
+    }
+    .filter-header h1{
+        font-size: large
+        
+        ;
+    }
+    .filter-header button{
+       font-size: small;
+    }
+    .filter-option {
+        padding: .5em;
+        font-size: x-small;
+        
+    }
+    .CardButtons{
+        display: flex;
+        gap: .1em;
+    }
+    .CardButtons button{
+     padding: .3em;
+     gap: .2em;
+    }
+    .CardFooter{
+        display: flex;
+        flex-direction: column
+        ;
+        gap: 1em;
+    }
+    
+    .CardFooter form{
+        display: flex;
+        flex-direction: column;
+        gap: .2em;
+        flex-wrap: wrap;
+    }
+
+  .CardFooter form input{
+    height: 2em;
+   
+    }
+  
+  
+  }
