@@ -1,0 +1,217 @@
+:root {
+    --background-color: #fff;
+    --btn-color: #021e36;
+    --btn-text-color: #fff;
+    --project-card-bg: #ffffff00;
+    --text-color: #222;
+    --form-text-color: #555;
+    --light-text-color: #888;
+    --tags-color: #E7E7E7;
+}
+
+body {
+    scroll-behavior: smooth;
+    justify-content: center;
+}
+
+h1,
+h2,
+h3,
+p {
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+h2,
+h3,
+p {
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+h1 {
+    font-family: 'Rubik', sans-serif;
+}
+
+.App {
+    max-width: 1000px;
+    text-align: center;
+    margin: 2em auto;
+}
+ul li{
+    list-style: none;
+}
+/* styles for heading */
+.heading {
+    background-color: var(--background-color);
+    justify-content: center;
+}
+
+.heading form {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    gap: .5em;
+}
+
+.heading form input,
+form textarea,
+form select {
+    padding: 10px;
+    border: 1px solid var(--form-text-color);
+    border-radius: 3px;
+    width: auto;
+}
+
+.heading button {
+    background-color: var(--btn-color);
+    color: var(--btn-text-color);
+    padding: .5em;
+    border-radius: 7px;
+    margin: 1em 0;
+    cursor: pointer;
+}
+
+.heading label {
+    text-align: left;
+}
+/* styles for filter section     */
+
+.filter-section {
+    padding: 2em;
+    text-align: left;
+}
+.filter-section button{
+    background-color: var(filter-section);
+}
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5em;
+}
+
+.filter-header button{
+   cursor: pointer;
+
+}
+.filter-option {
+    background-color: var(--tags-color);
+    color: var(--text-color);
+    border-radius: 7px;
+    padding: .5em;
+    font-size: small;
+    cursor: pointer;
+    
+}
+
+.filter-option.selected {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    border-radius: 7px;
+}
+
+.filter{
+    display: flex;
+    gap: .5em;
+}
+.type{
+    text-align: center;
+    margin-top: .5em;
+    justify-content: center
+    ;
+}
+/* styles for forms */
+form {
+    display: flex;
+}
+
+.EditCard{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+.EditCard input,
+textarea {
+    padding: 1rem;
+    border: 1px solid var(--form-text-color);
+    border-radius: 3px;
+    width: auto;
+    min-height: 2rem;
+
+}
+.EditTags{
+    margin: 1em;
+}
+.EditTags span {
+    cursor: pointer;
+    margin: 1em .5em;
+  }
+  
+  .tag-selected {
+    background-color: var(--text-color);
+    color: var(--btn-text-color);
+    padding: .3em;
+    border-radius: 7px;
+  }
+  
+  .tag-unselected {
+    background-color: var(--tags-color);
+    color: var(--text-color);
+    padding: .3em;
+    border-radius: 7px;
+  }
+  
+/* styles for cards */
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.CardHeader{
+    display: flex;
+    justify-content: space-between;
+}
+.SubHeader{
+    display: flex;
+    gap: 1em;
+    color: var(--light-text-color);
+    margin-bottom: 1em;
+}
+
+.CardButtons{
+    display: flex;
+    gap: .5em;
+}
+.CardFooter{
+    display: flex;
+    justify-content: space-between;
+    margin:1em 0;
+}
+
+.CardFooter form{
+    display: flex;
+    gap: .5em;
+}
+.PostCard {
+    padding: 2em;
+    text-align: left;
+    border: solid var(--form-text-color);
+    border-radius: 7px;
+    margin: 0 2em;
+}
+
+.PostCard input{
+    padding: 0 1em;
+}
+.card-container button{
+background-color: var(--btn-color);
+  color: var(--btn-text-color);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* end styles for cards */
